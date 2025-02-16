@@ -98,7 +98,7 @@ main {
   line-height: 30px;
 }
 
-/* primary btn */
+/* buttons */
 .btn-primary {
   width: 154px;
   height: 53px;
@@ -112,7 +112,18 @@ main {
   align-items: center;
   justify-content: center;
 }
-/* primary btn */
+
+.btn-outline {
+  width: 218px;
+  height: 53px;
+  border-radius: 32px;
+  border: 1px solid var(--dark);
+  font-size: 18px;
+  font-weight: 600;
+  background-color: inherit;
+  cursor: pointer;
+}
+/* buttons */
 
 /* common ends */
 
@@ -543,3 +554,88 @@ header {
   width: 100%;
 }
 /* how it works section ends */
+
+/* about us section starts */
+.about-us-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-us-left {
+  max-width: 610px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.about-us-left-top,
+.about-us-left-bottom {
+  max-width: 610px;
+  height: auto;
+  overflow: hidden;
+}
+.about-us-left-top img,
+.about-us-left-bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-us-left-bottom {
+  position: relative;
+}
+
+.about-us-left-bottom .experience {
+  position: absolute;
+  bottom: 44px;
+  left: 44px;
+}
+
+.experience h3 {
+  color: var(--white);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -1.44px;
+  margin-bottom: 10px;
+}
+
+.experience p {
+  color: var(--white);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: -0.72px;
+}
+
+.about-us-left-bottom button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.about-us-right {
+  max-width: 702px;
+  width: 100%;
+  padding: 64px;
+}
+
+.about-us-title-header {
+  max-width: 568px;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 42px;
+}
+.about-us-title-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-us-right .section-title {
+  margin-bottom: 42px;
+}
+/* about us section ends */
