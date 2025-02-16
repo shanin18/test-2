@@ -60,6 +60,7 @@ select:focus {
   --primary: #2a72e5;
   --white: #fff;
   --dark: #1f1f1f;
+  --gray: #8F8F8F;
   --lightgray: #f0f2f4;
 }
 
@@ -399,4 +400,56 @@ header {
   max-width: 291px;
   width: 100%;
 }
+
+.features-card-wrapper {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.features-card {
+  padding: 42px;
+  border-radius: 32px;
+  background-color: var(--lightgray);
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.features-card h3 {
+font-size: 30px;
+font-weight: 500;
+line-height: 38px;
+}
+
+.feature-card-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.feature-card-description p {
+  color: var(--gray);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.feature-icon {
+  max-width: 90.353px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.feature-icon img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 /* features section ends*/
