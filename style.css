@@ -102,7 +102,10 @@ main {
 
 header {
   background-color: var(--lightgray);
-  padding: 24px 0;
+  padding: 24px 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .nav-wrapper {
@@ -133,7 +136,7 @@ header {
   gap: 16px;
 }
 
-.nav-actions button{
+.nav-actions button {
   border: none;
   outline: none;
   cursor: pointer;
@@ -221,4 +224,37 @@ header {
 
 .rotate {
   transform: rotate(180deg);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--white);
+  max-width: 180px;
+  padding: 40px;
+  border-radius: 40px;
+  display: none;
+}
+
+.menu a {
+  color: var(--dark);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  transition-duration: 0.4s;
+}
+
+.menu a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.menu a.active {
+  background-color: var(--primary);
+  color: var(--white);
 }
