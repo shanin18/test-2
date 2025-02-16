@@ -98,6 +98,7 @@ main {
   line-height: 30px;
 }
 
+
 /* common ends */
 
 header {
@@ -258,3 +259,64 @@ header {
   background-color: var(--primary);
   color: var(--white);
 }
+
+
+/* hero section starts */
+.hero-wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.hero-left {
+    max-width: 733px;
+    height: auto;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.hero-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-right {
+    max-width: 579px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hero-content {
+    padding: 42px;
+    background-color: var(--white);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hero-content h2{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: -1.2px;
+}
+
+.hero-content h2 span{
+    display: inline-block;
+    background-image: url("./assets/hero-title-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--primary);
+    padding-right: 36px;
+}
+
+.hero-content p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+/* hero section ends */
