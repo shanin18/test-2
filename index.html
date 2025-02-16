@@ -3,17 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Home</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="container">
-          <div class="nav-wrapper"></div>
+          <div class="nav-wrapper">
+            <a href="/index.html" class="nav-logo">
+              <img src="./assets/logo.png" alt="logo" />
+            </a>
+
+            <div class="nav-actions">
+              <div class="dropdown">
+                <div class="dropdown-btn" id="selected-lang">
+                  <div>
+                    <img src="./assets/flag.svg" alt="English" />
+                    <span>Eng</span>
+                  </div>
+                  <span class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.85355 1.76257L4.67157 4.94455C4.47631 5.13981 4.15973 5.13981 3.96447 4.94455L0.782486 1.76257C0.587223 1.5673 0.587223 1.25072 0.782485 1.05546C0.977748 0.860197 1.29433 0.860197 1.48959 1.05546L4.31802 3.88389L7.14645 1.05546C7.34171 0.860196 7.65829 0.860196 7.85355 1.05546C8.04882 1.25072 8.04882 1.5673 7.85355 1.76257Z" fill="#1F1F1F"/>
+                      </svg>
+                  </span>
+                </div>
+                <div class="dropdown-content" id="dropdown">
+                  <div data-lang="en" data-flag="./assets/flag.png">
+                    <img src="./assets/flag.png" alt="English" />
+                  </div>
+                </div>
+              </div>
+              <button>
+                <img src="./assets/menu-icon.png" alt="menu icon" />
+              </button>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
+
+    <script src="script.js"></script>
   </body>
 </html>
