@@ -957,8 +957,8 @@ header {
   font-family: "Asap";
 }
 
-.form-control textarea:focus + .label-name .input-content-name,
-.form-control textarea:valid + .label-name .input-content-name {
+.form-control textarea:focus+.label-name .input-content-name,
+.form-control textarea:valid+.label-name .input-content-name {
   transform: translateY(-210%);
   font-size: 14px;
   color: var(--primary);
@@ -966,12 +966,123 @@ header {
   font-weight: 400;
 }
 
-.form-control textarea:focus + .label-name::after,
-.form-control textarea:valid + .label-name::after {
+.form-control textarea:focus+.label-name::after,
+.form-control textarea:valid+.label-name::after {
   transform: translateX(0%);
 }
 
 .get-in-touch-form button {
   width: 100%;
 }
+
 /* get in touch ends */
+
+
+/* footer starts */
+footer {
+  padding: 42px 0 0;
+}
+
+.footer-top {
+  background-image: url("./assets/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 323px;
+  padding-top: 96px;
+  border-radius: 32px 32px 0px 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-top h2 {
+  color: var(--white);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+}
+
+.footer-top button {
+  padding: 16px 32px;
+  border: 1px solid var(--white);
+  background-color: inherit;
+  color: var(--white);
+  border-radius: 32px;
+}
+
+.footer-bottom {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 64px 42px 56px;
+  border-radius: 32px;
+  overflow: hidden;
+  margin-top: -64px;
+}
+
+.footer-details {
+  display: grid;
+  grid-template-columns: 452px 372px 372px;
+  gap: 32px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.contact-info p img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-section h3 {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 38px;
+  margin-bottom: 16px;
+}
+
+.footer-section a {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  display: block;
+  width: fit-content;
+  margin-bottom: 18px;
+}
+
+.footer-payments {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 66px;
+}
+
+.footer-copyright {
+  max-width: 1072px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 43px 43px 0 0;
+  background-color: var(--white);
+  margin-top: -25px;
+  padding: 18px 0;
+}
+
+/* footer ends */
