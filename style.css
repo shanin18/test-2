@@ -1017,9 +1017,43 @@ header {
 .about-us-page-header-section {
   padding: 0 0 48px;
 }
-
 /* about us hero */
 
+/* course section starts */
+.course-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.course-left {
+  max-width: 624px;
+  width: 100%;
+}
+
+.course-left .section-title span{
+  background-image: none;
+  padding: 0;
+}
+
+.course-right {
+  max-width: 660px;
+  width: 100%;
+}
+
+.course-section-img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: -90px;
+}
+
+.course-section-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* course section ends */
 
 
 /* footer starts */
