@@ -2,6 +2,10 @@
   .container {
     padding: 0 20px;
   }
+
+  .text-container span {
+    font-size: 80px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -16,6 +20,27 @@
 
   .hero-content {
     padding: 32px;
+  }
+
+  .text-container span {
+    font-size: 72px;
+  }
+
+  .features-card {
+    padding: 34px 20px;
+    gap: 34px;
+  }
+
+  .feature-card-description {
+    gap: 24px;
+  }
+
+  .feature-icon {
+    width: 65.353px;
+  }
+
+  .feature-right {
+    max-width: 450px;
   }
 }
 
@@ -40,6 +65,14 @@
   .section-desc {
     font-size: 18px;
     line-height: 28px;
+  }
+
+  .text-container span {
+    font-size: 60px;
+  }
+
+  .features-card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -69,12 +102,42 @@
     font-size: 16px;
     line-height: 26px;
   }
+
+  .features-card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-card {
+    padding: 40px 30px;
+    gap: 34px;
+  }
+
+  .feature-card-description {
+    gap: 34px;
+  }
+
+  .feature-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .feature-header-left {
+    order: 2;
+  }
+
+  .feature-header .text-container {
+    order: 1;
+  }
+
+  .feature-right {
+    order: 3;
+  }
 }
 
 @media (max-width: 576px) {
   .container {
     padding: 0 16px;
   }
+
   .nav-wrapper {
     padding: 11px 16px;
     border-radius: 18px;
@@ -101,6 +164,28 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+  }
+
+  .text-container {
+    display: none;
+  }
+
+  .features-card-wrapper {
+    grid-template-columns: 325px;
+    justify-content: center;
+  }
+
+  .features-card {
+    padding: 42px;
+    gap: 64px;
+  }
+
+  .feature-card-description {
+    gap: 64px;
+  }
+
+  .feature-icon {
+    width: 90.353px;
   }
 }
 

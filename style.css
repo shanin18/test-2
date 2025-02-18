@@ -396,6 +396,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .feature-header-left {
@@ -1257,7 +1259,7 @@ footer {
 }
 
 .text-container span {
-  font-family: "Asap", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 96px;
   font-weight: 700;
   text-transform: uppercase;
