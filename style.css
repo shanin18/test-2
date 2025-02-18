@@ -469,19 +469,13 @@ header {
 }
 
 .feature-icon {
-  max-width: 90.353px;
+  width: 90.353px;
   height: auto;
   flex-shrink: 0;
 }
 
-.feature-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.features-card:hover .feature-icon img {
-  stroke: var(--white);
+.features-card:hover .feature-icon path {
+  fill: var(--white);
 }
 
 /* features section ends*/
@@ -758,21 +752,30 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-  color: var(--dark) !important;
+  transition: all 0.4s ease;
+  /* color: var(--dark) !important; */
+}
+
+.pricing-card:hover .badge {
+  color: var(--primary);
 }
 
 .pricing-icon {
   max-width: 64px;
   height: auto;
-  overflow: hidden;
   flex-shrink: 0;
+  transition: 0.4s ease;
 }
 
-.pricing-icon img {
+.pricing-card:hover .pricing-icon path {
+  fill: var(--white);
+}
+
+/* .pricing-icon img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 .pricing-title {
   text-align: center;

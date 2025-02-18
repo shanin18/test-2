@@ -1,306 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="container">
-                <div class="nav-wrapper">
-                    <a href="/index.html" class="nav-logo">
-                        <img src="./assets/logo.png" alt="logo" />
-                    </a>
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="/index.html" class="nav-logo">
+              <img src="./assets/logo.png" alt="logo" />
+            </a>
 
-                    <div class="nav-actions">
-                        <div class="dropdown">
-                            <div class="dropdown-btn" id="selected-lang">
-                                <div>
-                                    <img src="./assets/flag.svg" alt="English" />
-                                    <span>Eng</span>
-                                </div>
-                                <span class="arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6"
-                                        fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M7.85355 1.76257L4.67157 4.94455C4.47631 5.13981 4.15973 5.13981 3.96447 4.94455L0.782486 1.76257C0.587223 1.5673 0.587223 1.25072 0.782485 1.05546C0.977748 0.860197 1.29433 0.860197 1.48959 1.05546L4.31802 3.88389L7.14645 1.05546C7.34171 0.860196 7.65829 0.860196 7.85355 1.05546C8.04882 1.25072 8.04882 1.5673 7.85355 1.76257Z"
-                                            fill="#1F1F1F" />
-                                    </svg>
-                                </span>
-                            </div>
-                            <div class="dropdown-content" id="dropdown">
-                                <div data-lang="en" data-flag="./assets/flag.png">
-                                    <img src="./assets/flag.png" alt="English" />
-                                </div>
-                            </div>
-                        </div>
-                        <button>
-                            <img src="./assets/menu-icon.png" alt="menu icon" />
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <!-- nav menu -->
-        <div class="menu">
-            <a href="/index.html" class="active">Home</a>
-            <a href="/contact-us">Contact Us</a>
-            <a href="/about-us">About Us</a>
-            <a href="#">Login</a>
-            <a href="#">Signup</a>
-        </div>
-        <!-- nav menu -->
-
-        <section class="about-us">
-            <div class="container">
-                <div class="about-us-hero">
-                    <h1>About Us</h1>
-                </div>
-
-                <div class="page-index">
-                    <h3>Home / About Us</h3>
-                </div>
-            </div>
-        </section>
-        <!-- hero section -->
-        <section class="about-us-page-header-section">
-            <div class="container">
-              <div class="about-us-wrapper">
-                <div class="about-us-left">
-                  <div class="about-us-left-top">
-                    <img src="./assets/about-us-left-top.png" alt="background image" />
+            <div class="nav-actions">
+              <div class="dropdown">
+                <div class="dropdown-btn" id="selected-lang">
+                  <div>
+                    <img src="./assets/flag.svg" alt="English" />
+                    <span>Eng</span>
                   </div>
-                  <div class="about-us-left-bottom">
-                    <img src="./assets/about-us-left-bottom.png" alt="background image" />
-                    <div class="experience">
-                      <h3>5+</h3>
-                      <p>Years of Expertise</p>
-                    </div>
-      
-                    <button class="btn-outline">Learn More</button>
-                  </div>
+                  <span class="arrow">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="6"
+                      viewBox="0 0 8 6"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.85355 1.76257L4.67157 4.94455C4.47631 5.13981 4.15973 5.13981 3.96447 4.94455L0.782486 1.76257C0.587223 1.5673 0.587223 1.25072 0.782485 1.05546C0.977748 0.860197 1.29433 0.860197 1.48959 1.05546L4.31802 3.88389L7.14645 1.05546C7.34171 0.860196 7.65829 0.860196 7.85355 1.05546C8.04882 1.25072 8.04882 1.5673 7.85355 1.76257Z"
+                        fill="#1F1F1F"
+                      />
+                    </svg>
+                  </span>
                 </div>
-                <div class="about-us-right">
-                  <!-- <div class="about-us-title-header">
-                    <img src="./assets/about-us-title.png" alt="title image" />
-                  </div> -->
-      
-                  <div class="text-container">
-                    <div class="word"><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span></div>
-                    <div class="word"><span>U</span><span>S</span></div>
+                <div class="dropdown-content" id="dropdown">
+                  <div data-lang="en" data-flag="./assets/flag.png">
+                    <img src="./assets/flag.png" alt="English" />
                   </div>
-      
-                  <h3 class="section-category">
-                    <img src="./assets/slash.svg" alt="slash icon" />
-                    About us
-                    <img src="./assets/slash.svg" alt="slash icon" />
-                  </h3>
-      
-                  <h2 class="section-title">
-                    Capitalize on Market Trends and <span>Opportunities</span>
-                  </h2>
-      
-                  <p class="section-desc">
-                    Stay ahead of the curve by capitalizing on market trends and
-                    opportunities. Our platform equips you with real-time data and
-                    analysis tools to identify emerging trends and seize lucrative
-                    opportunities swiftly. Whether it's a sudden surge in a
-                    particular industry or a dip in a stock's price, our platform
-                    ensures you're informed and ready to act.
-                    <br><br> Maximize your returns
-                    by leveraging market movements and staying proactive in your
-                    investment strategy. With us, you're primed to capitalize on
-                    every opportunity that comes your way.
-                  </p>
                 </div>
               </div>
+              <button>
+                <img src="./assets/menu-icon.png" alt="menu icon" />
+              </button>
             </div>
-          </section>
-          <!-- about us section -->
+          </div>
+        </div>
+      </nav>
+
+      <!-- nav menu -->
+      <div class="menu">
+        <a href="/index.html" class="active">Home</a>
+        <a href="/contact-us">Contact Us</a>
+        <a href="/about-us">About Us</a>
+        <a href="#">Login</a>
+        <a href="#">Signup</a>
+      </div>
+      <!-- nav menu -->
+
+      <section class="about-us">
+        <div class="container">
+          <div class="about-us-hero">
+            <h1>About Us</h1>
+          </div>
+
+          <div class="page-index">
+            <h3>Home / About Us</h3>
+          </div>
+        </div>
+      </section>
+      <!-- hero section -->
+      <section class="about-us-page-header-section">
+        <div class="container">
+          <div class="about-us-wrapper">
+            <div class="about-us-left">
+              <div class="about-us-left-top aos left">
+                <img src="./assets/about-us-left-top.png" alt="background image" />
+              </div>
+              <div class="about-us-left-bottom">
+                <img src="./assets/about-us-left-bottom.png" alt="background image" />
+                <div class="experience">
+                  <h3 class="aos">5+</h3>
+                  <p class="aos delay-1">Years of Expertise</p>
+                </div>
+  
+                <button class="btn-outline aos right">Learn More</button>
+              </div>
+            </div>
+            <div class="about-us-right">
+              <!-- <div class="about-us-title-header">
+                <img src="./assets/about-us-title.png" alt="title image" />
+              </div> -->
+  
+              <div class="text-container">
+                <div class="word"><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span></div>
+                <div class="word"><span>U</span><span>S</span></div>
+              </div>
+  
+              <h3 class="section-category aos">
+                <img src="./assets/slash.svg" alt="slash icon" />
+                About us
+                <img src="./assets/slash.svg" alt="slash icon" />
+              </h3>
+  
+              <h2 class="section-title aos right">
+                Capitalize on Market Trends and <span>Opportunities</span>
+              </h2>
+  
+              <p class="section-desc aos delay-1">
+                Stay ahead of the curve by capitalizing on market trends and
+                opportunities. Our platform equips you with real-time data and
+                analysis tools to identify emerging trends and seize lucrative
+                opportunities swiftly. Whether it's a sudden surge in a
+                particular industry or a dip in a stock's price, our platform
+                ensures you're informed and ready to act.
+                <br><br> Maximize your returns
+                by leveraging market movements and staying proactive in your
+                investment strategy. With us, you're primed to capitalize on
+                every opportunity that comes your way.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about us section -->
     </header>
 
     <main>
-        <section>
-            <div class="container">
-                <div class="course-wrapper">
-                    <div class="course-left">
-                        <h2 class="section-title">
-                            Diving into Course Synergy: Unveiling <span>Unique Integrations</span>
-                        </h2>
-                    </div>
-                    <div class="course-right">
-                        <p class="section-desc">
-                            Embark on an immersive learning experience where the synergy between ChatGPT and
-                            ExcelxChatGPT sets us apart. Our courses seamlessly integrate these powerful tools, offering
-                            a holistic approach to skill development.
-                            <br><br>
-                            With ChatGPT, delve into the realms of AI-driven conversations, web development, and digital
-                            marketing strategies. ExcelxChatGPT elevates your data management skills, from basic queries
-                            to advanced analysis and investment dashboard creation. This unique integration empowers
-                            learners to harness the combined power of AI and data manipulation, paving the way for
-                            innovative solutions and enhanced productivity in today's tech-driven world.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="course-section-img">
-                    <img src="./assets/course-bg.png" alt="image">
-                </div>
+      <section>
+        <div class="container">
+          <div class="course-wrapper">
+            <div class="course-left">
+              <h2 class="section-title aos left">
+                Diving into Course Synergy: Unveiling
+                <span>Unique Integrations</span>
+              </h2>
             </div>
-        </section>
-        <!-- course section -->
+            <div class="course-right">
+              <p class="section-desc aos right">
+                Embark on an immersive learning experience where the synergy
+                between ChatGPT and ExcelxChatGPT sets us apart. Our courses
+                seamlessly integrate these powerful tools, offering a holistic
+                approach to skill development.
+                <br /><br />
+                With ChatGPT, delve into the realms of AI-driven conversations,
+                web development, and digital marketing strategies. ExcelxChatGPT
+                elevates your data management skills, from basic queries to
+                advanced analysis and investment dashboard creation. This unique
+                integration empowers learners to harness the combined power of
+                AI and data manipulation, paving the way for innovative
+                solutions and enhanced productivity in today's tech-driven
+                world.
+              </p>
+            </div>
+          </div>
 
-        <section>
-            <div class="container">
-              <div class="pricing-wrapper">
-                <div class="pricing-left">
-                  <h3 class="section-category">
-                    <img src="./assets/slash.svg" alt="slash icon" />
-                    Pricing
-                    <img src="./assets/slash.svg" alt="slash icon" />
-                  </h3>
-      
-                  <h2 class="section-title">
-                    Simple and flexible. Only <span>pay</span> for what you use.
-                  </h2>
-      
-                  <!-- <div class="title-img">
-                    <img src="./assets/pricing-title-bg.png" alt="pricing title">
-                  </div> -->
-                  <div class="text-rotate">
-                    <div class="text-container">
-                      <div class="word"><span>P</span><span>R</span><span>I</span><span>C</span><span>I</span><span>N</span><span>G</span></div>
-                    </div>
-                  </div>
-                  
+          <div class="course-section-img aos">
+            <img src="./assets/course-bg.png" alt="image" />
+          </div>
+        </div>
+      </section>
+      <!-- course section -->
+
+      <section>
+        <div class="container">
+          <div class="pricing-wrapper">
+            <div class="pricing-left">
+              <h3 class="section-category aos">
+                <img src="./assets/slash.svg" alt="slash icon" />
+                Pricing
+                <img src="./assets/slash.svg" alt="slash icon" />
+              </h3>
+  
+              <h2 class="section-title aos right">
+                Simple and flexible. Only <span>pay</span> for what you use.
+              </h2>
+  
+              <!-- <div class="title-img">
+                <img src="./assets/pricing-title-bg.png" alt="pricing title">
+              </div> -->
+              <div class="text-rotate">
+                <div class="text-container">
+                  <div class="word"><span>P</span><span>R</span><span>I</span><span>C</span><span>I</span><span>N</span><span>G</span></div>
                 </div>
-                <div class="pricing-card-wrapper">
-                  <div class="pricing-card">
-                    <div class="pricing-card-left">
-                      <div class="pricing-icon">
-                        <img src="/assets/pricing-basic.png" alt="Basic">
-                      </div>
-                      <h3 class="pricing-title">Basic</h3>
+              </div>
+              
+            </div>
+            <div class="pricing-card-wrapper">
+              <div class="pricing-card aos right">
+                <div class="pricing-card-left">
+                  <svg class="pricing-icon" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                    <path d="M0.492559 25.915C3.71997 28.6691 7.79516 30.1649 12.0345 30.1647C12.2575 30.1647 12.4818 30.1606 12.7055 30.1522C17.2084 29.9846 21.4442 28.1367 24.6323 24.9486C26.5818 22.9991 28.0173 20.6965 28.899 18.1045C29.0641 17.6192 28.8044 17.0918 28.3192 16.9267C27.8335 16.7614 27.3065 17.0214 27.1414 17.5067C26.352 19.827 25.0663 21.8892 23.3197 23.6357C20.4638 26.4915 16.6698 28.147 12.6366 28.297C8.78837 28.4407 5.057 27.206 2.07452 24.8144L4.86751 22.0212C9.6374 25.5724 16.3099 25.1045 20.5491 20.8651C24.7884 16.6257 25.2562 9.9532 21.7052 5.18369L24.4983 2.39045C27.0461 5.56501 28.2668 9.53636 27.9413 13.6286C27.9007 14.1397 28.282 14.5869 28.7931 14.6275C29.3041 14.6667 29.7514 14.2868 29.792 13.7758C30.1697 9.02534 28.6805 4.42019 25.5987 0.808737C25.3453 0.511826 24.9762 0.332615 24.5857 0.317144C24.1958 0.30254 23.8121 0.451305 23.5354 0.727919L20.1118 4.15149C19.6058 4.6572 19.561 5.46117 20.0076 6.02182C23.2338 10.0694 22.9022 15.8863 19.2363 19.5523C15.5703 23.2184 9.75336 23.5499 5.70577 20.3238C5.14549 19.8773 4.34164 19.9217 3.83569 20.4275L0.411741 23.8517C0.135375 24.1282 -0.0143802 24.5109 0.00109041 24.9017C0.0164372 25.2921 0.195648 25.6615 0.492559 25.915Z" fill="#1F1F1F"/>
+                    <path d="M39.3674 24.9489C42.5556 28.1369 46.7912 29.9848 51.2942 30.1524C51.5184 30.1607 51.742 30.1649 51.9653 30.1649C56.2042 30.1649 60.28 28.6691 63.5073 25.9151C63.8041 25.6616 63.9833 25.2923 63.9987 24.902C64.0141 24.5111 63.8644 24.1284 63.5879 23.8518L60.1639 20.4279C59.6581 19.9223 58.8541 19.8777 58.294 20.3242C56.4317 21.8085 54.1955 22.5397 51.966 22.5395C49.3496 22.5393 46.7427 21.532 44.7633 19.5526C41.0973 15.8867 40.7657 10.0698 43.9921 6.02205C44.4387 5.46152 44.3939 4.65755 43.888 4.15209L40.4643 0.728272C40.4643 0.728148 40.4643 0.728148 40.4642 0.728148C40.1877 0.451658 39.8045 0.302027 39.4141 0.317497C39.0237 0.332968 38.6545 0.512055 38.4012 0.80909C35.5021 4.2063 33.9973 8.54363 34.1639 13.0222C34.3313 17.5249 36.1792 21.7606 39.3674 24.9489ZM39.5016 2.3908L42.2946 5.18392C38.7435 9.95356 39.2113 16.6259 43.4506 20.8654C45.7909 23.2056 48.8723 24.3965 51.9663 24.3963C54.4768 24.3961 56.9956 23.6122 59.1322 22.0215L61.9252 24.8146C58.9425 27.2063 55.2108 28.4391 51.3632 28.2972C47.3299 28.1472 43.5359 26.4917 40.6801 23.636C37.8242 20.7802 36.1688 16.9862 36.0188 12.953C35.8759 9.10478 37.1097 5.37365 39.5016 2.3908Z" fill="#1F1F1F"/>
+                    <path d="M24.6325 39.0511C21.4443 35.863 17.2086 34.0151 12.7056 33.8475C8.22685 33.6804 3.88977 35.1857 0.492436 38.0848C0.195649 38.3383 0.016438 38.7076 0.00109118 39.098C-0.0143794 39.4888 0.135252 39.8715 0.411866 40.1481L3.83581 43.5721C4.34164 44.0775 5.14561 44.1222 5.70565 43.6758C9.75349 40.4497 15.5704 40.7812 19.2363 44.4472C22.9024 48.1131 23.2339 53.93 20.0075 57.9778C19.561 58.5383 19.6058 59.3423 20.1116 59.8477L23.5354 63.2715C23.7989 63.535 24.1589 63.6834 24.5305 63.6834C24.5488 63.6834 24.5672 63.6831 24.5857 63.6823C24.976 63.6668 25.3452 63.4878 25.5986 63.1907C28.4975 59.7935 30.0025 55.4562 29.8359 50.9776C29.6686 46.475 27.8206 42.2394 24.6325 39.0511ZM24.4983 61.6091L21.7053 58.816C25.2564 54.0464 24.7885 47.374 20.5492 43.1346C16.31 38.8954 9.63752 38.4272 4.86764 41.9785L2.07464 39.1854C5.05724 36.7936 8.78763 35.5608 12.6367 35.7027C16.6699 35.8527 20.4641 37.5082 23.3198 40.364C26.1756 43.2197 27.8309 47.0137 27.9809 51.0469C28.124 54.8952 26.8902 58.6263 24.4983 61.6091Z" fill="#1F1F1F"/>
+                    <path d="M63.5073 38.0848C60.1101 35.1857 55.7725 33.68 51.2943 33.8476C46.7914 34.0152 42.5557 35.8631 39.3675 39.0511C36.1794 42.2394 34.3313 46.475 34.1639 50.978C33.9973 55.4565 35.5021 59.7937 38.4011 63.191C38.6544 63.488 39.0236 63.6672 39.4141 63.6826C39.4325 63.6834 39.4508 63.6837 39.4693 63.6837C39.8407 63.6837 40.2007 63.5355 40.4643 63.2719L43.8879 59.8483C44.394 59.3426 44.4388 58.5386 43.9921 57.978C40.766 53.9304 41.0975 48.1134 44.7635 44.4474C45.4624 43.7485 46.2528 43.1578 47.1127 42.6917C47.5635 42.4474 47.7308 41.8841 47.4865 41.4334C47.2423 40.9825 46.6789 40.8152 46.2282 41.0595C45.2108 41.6108 44.2764 42.309 43.4509 43.1346C39.2116 47.3741 38.7438 54.0466 42.2948 58.8161L39.5018 61.6092C37.1099 58.6264 35.8761 54.8952 36.0192 51.047C36.1692 47.0138 37.8246 43.2198 40.6804 40.364C43.5363 37.5083 47.3302 35.8528 51.3635 35.7028C55.21 35.5596 58.9431 36.7937 61.9256 39.1854L59.1326 41.9785C56.739 40.1968 53.796 39.3775 50.7998 39.6656C50.2895 39.7148 49.9156 40.1684 49.9649 40.6788C50.014 41.1889 50.4676 41.5624 50.9779 41.5137C53.6263 41.2585 56.2248 42.0266 58.2943 43.676C58.8546 44.1225 59.6585 44.078 60.1644 43.5723L63.5884 40.1483C63.8647 39.8718 64.0145 39.4891 63.999 39.0983C63.9834 38.7078 63.8043 38.3384 63.5073 38.0848Z" fill="#1F1F1F"/>
+                    <path d="M38.4352 31.9998C38.4352 28.4516 35.5485 25.5649 32.0003 25.5649C28.4521 25.5649 25.5654 28.4516 25.5654 31.9998C25.5654 35.548 28.4521 38.4347 32.0003 38.4347C35.5485 38.4347 38.4352 35.548 38.4352 31.9998ZM32.0004 36.5784C29.4759 36.5784 27.422 34.5245 27.422 32C27.422 29.4754 29.4759 27.4215 32.0004 27.4215C34.525 27.4215 36.5789 29.4754 36.5789 32C36.5789 34.5245 34.525 36.5784 32.0004 36.5784Z" fill="#1F1F1F"/>
+                    <path d="M51.2282 17.5511C53.8871 17.5511 56.0502 15.3879 56.0502 12.7291C56.0502 10.0703 53.8871 7.90698 51.2282 7.90698C48.5694 7.90698 46.4062 10.0703 46.4062 12.7291C46.4062 15.3879 48.5694 17.5511 51.2282 17.5511ZM51.2282 9.76345C52.8634 9.76345 54.1938 11.0938 54.1938 12.7291C54.1938 14.3643 52.8634 15.6946 51.2282 15.6946C49.5931 15.6946 48.2627 14.3643 48.2627 12.7291C48.2627 11.0938 49.5931 9.76345 51.2282 9.76345Z" fill="#1F1F1F"/>
+                    <path d="M51.2282 46.449C48.5694 46.449 46.4062 48.6121 46.4062 51.271C46.4062 53.9298 48.5694 56.0931 51.2282 56.0931C53.8871 56.0931 56.0502 53.9298 56.0502 51.271C56.0502 48.6121 53.8872 46.449 51.2282 46.449ZM51.2282 54.2365C49.5931 54.2365 48.2627 52.9061 48.2627 51.2708C48.2627 49.6357 49.5931 48.3053 51.2282 48.3053C52.8634 48.3053 54.1938 49.6357 54.1938 51.2708C54.1939 52.9061 52.8635 54.2365 51.2282 54.2365Z" fill="#1F1F1F"/>
+                    <path d="M12.7712 17.5511C15.43 17.5511 17.5932 15.3879 17.5932 12.7291C17.5932 10.0703 15.43 7.90698 12.7712 7.90698C10.1124 7.90698 7.94922 10.0703 7.94922 12.7291C7.94922 15.3879 10.1124 17.5511 12.7712 17.5511ZM12.7712 9.76345C14.4064 9.76345 15.7367 11.0938 15.7367 12.7291C15.7367 14.3643 14.4064 15.6946 12.7712 15.6946C11.136 15.6946 9.80569 14.3643 9.80569 12.7291C9.80569 11.0938 11.136 9.76345 12.7712 9.76345Z" fill="#1F1F1F"/>
+                    <path d="M12.7712 46.449C10.1124 46.449 7.94922 48.6121 7.94922 51.271C7.94922 53.9298 10.1124 56.0931 12.7712 56.0931C15.43 56.0931 17.5932 53.9298 17.5932 51.271C17.5932 48.6121 15.43 46.449 12.7712 46.449ZM12.7712 54.2365C11.136 54.2365 9.80569 52.9061 9.80569 51.2708C9.80569 49.6357 11.136 48.3053 12.7712 48.3053C14.4064 48.3053 15.7367 49.6357 15.7367 51.2708C15.7367 52.9061 14.4064 54.2365 12.7712 54.2365Z" fill="#1F1F1F"/>
+                  </svg>
+                  <h3 class="pricing-title">Basic</h3>
+                </div>
+  
+                <div class="pricing-card-right">
+                  <ul class="features">
+                    <li>Real-time market data</li>
+                    <li>Advanced charting tools</li>
+                    <li>Friendly interface</li>
+                    <li>Premium Support</li>
+                    <li>Progress tracking</li>
+                    <li>Early access to new features</li>
+                    <li>Setup of reminder emails</li>
+                  </ul>
+                  <div class="pricing-content">
+                    <div>
+                      <h4 class="price">3 USD</h4>
+                      <p class="duration">3 Days Trial</p>
+                      <p class="billing">56 USD <br> Billed Every 14 Days</p>
                     </div>
-      
-                    <div class="pricing-card-right">
-                      <ul class="features">
-                        <li>Real-time market data</li>
-                        <li>Advanced charting tools</li>
-                        <li>Friendly interface</li>
-                        <li>Premium Support</li>
-                        <li>Progress tracking</li>
-                        <li>Early access to new features</li>
-                        <li>Setup of reminder emails</li>
-                      </ul>
-                      <div class="pricing-content">
-                        <div>
-                          <h4 class="price">3 USD</h4>
-                          <p class="duration">3 Days Trial</p>
-                          <p class="billing">56 USD <br> Billed Every 14 Days</p>
-                        </div>
-                        <button class="btn-primary">Buy Now</button>
-                      </div>
-                    </div>
-      
+                    <button class="btn-primary">Buy Now</button>
                   </div>
-                  <div class="pricing-card">
-                    <span class="badge">Popular</span>
-                    <div class="pricing-card-left">
-                      <div class="pricing-icon">
-                        <img src="/assets/pricing-advance.png" alt="Advance" class="icon">
-                      </div>
-                      <h3 class="pricing-title">Advance</h3>
+                </div>
+  
+              </div>
+              <div class="pricing-card aos">
+                <span class="badge">Popular</span>
+                <div class="pricing-card-left">
+                  <svg class="pricing-icon" xmlns="http://www.w3.org/2000/svg" width="61" height="64" viewBox="0 0 61 64" fill="none">
+                    <path d="M60.9898 29.9162C58.979 31.2454 50.0535 36.3182 30.9414 36.3182C11.9166 36.3182 2.23717 31.2236 0.0163595 29.8794C0.0136329 30.0866 0 30.2925 0 30.4997C0 31.3654 0.0449888 32.2175 0.117244 33.0641C4.1676 35.1649 13.9479 39.0448 30.94 39.0448C47.6541 39.0448 56.9531 35.2821 60.8821 33.1499C60.9571 32.2761 61.0048 31.394 61.0048 30.5024C61.0076 30.3047 60.9967 30.1098 60.9898 29.9162Z" fill="#1F1F1F"/>
+                    <path d="M1.2573 38.6196L1.14551 38.7505L1.14823 38.7532C1.52859 40.1111 2.0003 41.4294 2.55652 42.7013C6.88635 45.0898 15.9659 48.7407 31.0154 48.7407C45.0832 48.7407 53.7361 45.5534 58.2363 43.1812C58.8484 41.8466 59.3679 40.4601 59.7877 39.03C57.7142 40.5419 48.985 46.0142 31.0167 46.0142C10.2496 46.0142 1.34319 38.6946 1.2573 38.6196Z" fill="#1F1F1F"/>
+                    <path d="M60.033 22.8488C59.7917 21.9218 59.5067 21.0111 59.1864 20.1195C57.1469 21.6696 49.6133 26.2094 31.4528 26.2094C13.2964 26.2094 4.36409 21.5796 1.85971 20.0132C1.53797 20.8898 1.2585 21.7868 1.01855 22.7002C4.51678 24.7479 13.824 28.936 31.4514 28.936C48.4858 28.936 56.7774 25.0001 60.033 22.8488Z" fill="#1F1F1F"/>
+                    <path d="M5.74316 48.2827C7.41048 50.5963 9.39135 52.6685 11.6244 54.4339C16.0497 56.0794 22.4504 57.5736 31.2 57.5736C39.0049 57.5736 44.7485 56.3316 48.867 54.8388C51.3782 52.9398 53.5826 50.6603 55.404 48.0864C54.4824 48.9726 47.7382 54.847 31.2 54.847C14.5991 54.8457 6.84607 49.1634 5.74316 48.2827Z" fill="#1F1F1F"/>
+                    <path d="M57.4844 49.8652C57.5076 49.842 57.5403 49.8066 57.5485 49.7984L57.5375 49.7861C57.5171 49.8134 57.5035 49.8407 57.4844 49.8652Z" fill="#1F1F1F"/>
+                    <path d="M31.3505 3.14785C35.4431 2.99925 38.2174 1.98223 39.5467 1.36875C37.6953 0.793439 35.7649 0.391266 33.7813 0.178592C32.7043 0.064075 31.6123 0 30.5053 0C29.4296 0 28.3703 0.0586218 27.3206 0.167686C25.2811 0.38036 23.3002 0.793439 21.3984 1.3892C22.6731 1.90862 26.2041 3.16012 30.5407 3.16012C30.8079 3.16149 31.0792 3.15876 31.3505 3.14785Z" fill="#1F1F1F"/>
+                    <path d="M31.4414 61.2612C30.0317 61.3062 28.7039 61.1917 27.5069 61.0049C25.4674 61.2176 23.4866 61.6334 21.582 62.2291C22.8608 62.7458 26.3904 64 30.7284 64C30.9942 64 31.2669 63.9946 31.5382 63.9837C35.6322 63.8378 38.4051 62.8194 39.7357 62.2073C37.883 61.6279 35.9525 61.2285 33.9662 61.0172C33.196 61.133 32.3698 61.2285 31.4414 61.2612Z" fill="#1F1F1F"/>
+                    <path d="M49.2379 6.4577C48.4703 5.86058 47.6755 5.2989 46.8575 4.77539C44.4909 6.29274 39.6239 8.43993 31.0147 8.43993C22.43 8.43993 16.8418 6.41407 13.9012 4.93626C13.0518 5.48976 12.2284 6.08416 11.4404 6.71809C14.2897 8.3854 20.6004 11.1679 31.0133 11.1679C41.3225 11.1652 46.8071 8.27089 49.2379 6.4577Z" fill="#1F1F1F"/>
+                    <path d="M56.0448 13.8567C55.5458 13.0947 55.0114 12.3571 54.4497 11.6441C52.0203 13.4709 45.1275 17.4381 31.0092 17.4381C17.8425 17.4381 10.1766 13.4259 6.91698 11.186C6.33622 11.8922 5.78817 12.627 5.27148 13.385C8.84741 15.8908 16.9795 20.1647 31.0092 20.1647C45.6469 20.1647 53.1246 16.0326 56.0448 13.8567Z" fill="#1F1F1F"/>
+                  </svg>
+                  <h3 class="pricing-title">Advance</h3>
+                </div>
+                <div class="pricing-card-right">
+                  <ul class="features">
+                    <li>Real-time market data</li>
+                    <li>Advanced charting tools</li>
+                    <li>Friendly interface</li>
+                    <li>Premium Support</li>
+                    <li>Progress tracking</li>
+                    <li>Early access to new features</li>
+                    <li>Setup of reminder emails</li>
+                  </ul>
+                  <div class="pricing-content">
+                    <div>
+                      <h4 class="price">9 USD</h4>
+                      <p class="duration">3 Days Trial</p>
+                      <p class="billing">96 USD <br> Billed Every 14 Days</p>
                     </div>
-                    <div class="pricing-card-right">
-                      <ul class="features">
-                        <li>Real-time market data</li>
-                        <li>Advanced charting tools</li>
-                        <li>Friendly interface</li>
-                        <li>Premium Support</li>
-                        <li>Progress tracking</li>
-                        <li>Early access to new features</li>
-                        <li>Setup of reminder emails</li>
-                      </ul>
-                      <div class="pricing-content">
-                        <div>
-                          <h4 class="price">9 USD</h4>
-                          <p class="duration">3 Days Trial</p>
-                          <p class="billing">96 USD <br> Billed Every 14 Days</p>
-                        </div>
-                        <button class="btn-primary">Buy Now</button>
-                      </div>
-                    </div>
+                    <button class="btn-primary">Buy Now</button>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- pricing section -->
-
+          </div>
+        </div>
+      </section>
+      <!-- pricing section -->
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-top">
-                <h2>Ready to Elevate Your Skills?</h2>
-                <button>Get Started</button>
-            </div>
-            <div class="footer-bottom">
-                <div class="footer-details">
-                    <div class="contact-info">
-                        <p><img src="./assets/envelop.png" alt="Email"> support@budgetbscope.com</p>
-                        <p><img src="./assets/phone.png" alt="Phone"> +44 123456789</p>
-                        <p><img src="./assets/location.png" alt="Location"> 21 Cromwell Road, Ringsfield, Suffolk,
-                            Beccles NR34 8lr,
-                            United Kingdom</p>
-                        <p><img src="./assets/clock.png" alt="Hours"> Monday - Friday 00-24 (CET), Weekends 9:00 - 17:00
-                            (CET)</p>
-                    </div>
-
-                    <div class="footer-section">
-                        <h3>Useful Links</h3>
-                        <a href="/about-us.html">About us</a>
-                        <a href="#">Contact Us</a>
-                        <a href="#">Pricing</a>
-                        <a href="#">Unsubscribe</a>
-                    </div>
-
-                    <div class="footer-section">
-                        <h3>Support</h3>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Use</a>
-                        <a href="#">Cookie Policy</a>
-                        <a href="#">Subscription and Cancellation Policy</a>
-                    </div>
-                </div>
-
-                <div class="footer-payments">
-                    <a href="./index.html">
-                        <img src="./assets/footer-logo.png" alt="logo">
-                    </a>
-                    <div class="payment-icons">
-                        <img src="./assets/master.png" alt="MasterCard">
-                        <img src="./assets/visa.png" alt="Visa">
-                    </div>
-                </div>
-            </div>
-
+      <div class="container">
+        <div class="footer-top">
+          <h2 class="aos">Ready to Elevate Your Skills?</h2>
+          <button class="aos delay-1">Get Started</button>
         </div>
-        <p class="footer-copyright">
-            Copyright &copy; Budgetbscope 2023. Blindscope Limited - CR: 14031689 | All rights reserved.
-        </p>
+        <div class="footer-bottom">
+          <div class="footer-details">
+            <div class="contact-info">
+              <p>
+                <img src="./assets/envelop.png" alt="Email" />
+                support@budgetbscope.com
+              </p>
+              <p><img src="./assets/phone.png" alt="Phone" /> +44 123456789</p>
+              <p>
+                <img src="./assets/location.png" alt="Location" /> 21 Cromwell
+                Road, Ringsfield, Suffolk, Beccles NR34 8lr, United Kingdom
+              </p>
+              <p>
+                <img src="./assets/clock.png" alt="Hours" /> Monday - Friday
+                00-24 (CET), Weekends 9:00 - 17:00 (CET)
+              </p>
+            </div>
 
+            <div class="footer-section">
+              <h3>Useful Links</h3>
+              <a href="/about-us.html">About us</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Pricing</a>
+              <a href="#">Unsubscribe</a>
+            </div>
+
+            <div class="footer-section">
+              <h3>Support</h3>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Use</a>
+              <a href="#">Cookie Policy</a>
+              <a href="#">Subscription and Cancellation Policy</a>
+            </div>
+          </div>
+
+          <div class="footer-payments">
+            <a href="./index.html">
+              <img src="./assets/footer-logo.png" alt="logo" />
+            </a>
+            <div class="payment-icons">
+              <img src="./assets/master.png" alt="MasterCard" />
+              <img src="./assets/visa.png" alt="Visa" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="footer-copyright">
+        Copyright &copy; Budgetbscope 2023. Blindscope Limited - CR: 14031689 |
+        All rights reserved.
+      </p>
     </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
