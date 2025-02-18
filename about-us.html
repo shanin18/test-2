@@ -17,7 +17,7 @@
             <a href="/index.html" class="nav-logo">
               <img src="./assets/logo.png" alt="logo" />
             </a>
-
+  
             <div class="nav-actions">
               <div class="dropdown">
                 <div class="dropdown-btn" id="selected-lang">
@@ -26,45 +26,46 @@
                     <span>Eng</span>
                   </div>
                   <span class="arrow">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="8"
-                      height="6"
-                      viewBox="0 0 8 6"
-                      fill="none"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M7.85355 1.76257L4.67157 4.94455C4.47631 5.13981 4.15973 5.13981 3.96447 4.94455L0.782486 1.76257C0.587223 1.5673 0.587223 1.25072 0.782485 1.05546C0.977748 0.860197 1.29433 0.860197 1.48959 1.05546L4.31802 3.88389L7.14645 1.05546C7.34171 0.860196 7.65829 0.860196 7.85355 1.05546C8.04882 1.25072 8.04882 1.5673 7.85355 1.76257Z"
-                        fill="#1F1F1F"
-                      />
+                        fill="#1F1F1F" />
                     </svg>
                   </span>
                 </div>
                 <div class="dropdown-content" id="dropdown">
-                  <div data-lang="en" data-flag="./assets/flag.png">
-                    <img src="./assets/flag.png" alt="English" />
+                  <div data-lang="Eng" data-flag="./assets/flag.svg">
+                    <img src="./assets/flag.svg" alt="English" />
+                    <span>Eng</span>
+                  </div>
+                  <div data-lang="BD" data-flag="./assets/flag-bd.svg">
+                    <img src="./assets/flag-bd.svg" alt="Bangladesh" />
+                    <span>BD</span>
+                  </div>
+                  <div data-lang="Pal" data-flag="./assets/flag-pal.svg">
+                    <img src="./assets/flag-pal.svg" alt="Palestine" />
+                    <span>Pal</span>
                   </div>
                 </div>
+                
               </div>
-              <button>
-                <img src="./assets/menu-icon.png" alt="menu icon" />
+              <button class="hamburger">
+                <img src="./assets/menu-icon.png" alt="menu icon" id="menuIcon" />
               </button>
             </div>
+  
+            <!-- nav menu -->
+            <div class="menu">
+              <a href="/index.html">Home</a>
+              <a href="#">Contact Us</a>
+              <a href="/about-us.html" class="active">About Us</a>
+              <a href="#">Login</a>
+              <a href="#">Signup</a>
+            </div>
+            <!-- nav menu -->
           </div>
         </div>
       </nav>
-
-      <!-- nav menu -->
-      <div class="menu">
-        <a href="/index.html" class="active">Home</a>
-        <a href="/contact-us">Contact Us</a>
-        <a href="/about-us">About Us</a>
-        <a href="#">Login</a>
-        <a href="#">Signup</a>
-      </div>
-      <!-- nav menu -->
 
       <section class="about-us">
         <div class="container">
@@ -92,14 +93,10 @@
                   <p class="aos delay-1">Years of Expertise</p>
                 </div>
   
-                <button class="btn-outline aos right">Learn More</button>
+                <button class="btn btn-outline aos right">Learn More</button>
               </div>
             </div>
             <div class="about-us-right">
-              <!-- <div class="about-us-title-header">
-                <img src="./assets/about-us-title.png" alt="title image" />
-              </div> -->
-  
               <div class="text-container">
                 <div class="word"><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span></div>
                 <div class="word"><span>U</span><span>S</span></div>
@@ -184,9 +181,6 @@
                 Simple and flexible. Only <span>pay</span> for what you use.
               </h2>
   
-              <!-- <div class="title-img">
-                <img src="./assets/pricing-title-bg.png" alt="pricing title">
-              </div> -->
               <div class="text-rotate">
                 <div class="text-container">
                   <div class="word"><span>P</span><span>R</span><span>I</span><span>C</span><span>I</span><span>N</span><span>G</span></div>
@@ -227,7 +221,7 @@
                       <p class="duration">3 Days Trial</p>
                       <p class="billing">56 USD <br> Billed Every 14 Days</p>
                     </div>
-                    <button class="btn-primary">Buy Now</button>
+                    <button class="btn btn-outline-2">Buy Now</button>
                   </div>
                 </div>
   
@@ -264,7 +258,7 @@
                       <p class="duration">3 Days Trial</p>
                       <p class="billing">96 USD <br> Billed Every 14 Days</p>
                     </div>
-                    <button class="btn-primary">Buy Now</button>
+                    <button class="btn btn-primary">Buy Now</button>
                   </div>
                 </div>
               </div>
@@ -279,26 +273,18 @@
       <div class="container">
         <div class="footer-top">
           <h2 class="aos">Ready to Elevate Your Skills?</h2>
-          <button class="aos delay-1">Get Started</button>
+          <button class="btn btn-outline aos delay-1">Get Started</button>
         </div>
         <div class="footer-bottom">
           <div class="footer-details">
             <div class="contact-info">
-              <p>
-                <img src="./assets/envelop.png" alt="Email" />
-                support@budgetbscope.com
-              </p>
-              <p><img src="./assets/phone.png" alt="Phone" /> +44 123456789</p>
-              <p>
-                <img src="./assets/location.png" alt="Location" /> 21 Cromwell
-                Road, Ringsfield, Suffolk, Beccles NR34 8lr, United Kingdom
-              </p>
-              <p>
-                <img src="./assets/clock.png" alt="Hours" /> Monday - Friday
-                00-24 (CET), Weekends 9:00 - 17:00 (CET)
-              </p>
+              <p><img src="./assets/envelop.png" alt="Email"> support@budgetbscope.com</p>
+              <p><img src="./assets/phone.png" alt="Phone"> +44 123456789</p>
+              <p><img src="./assets/location.png" alt="Location"> 21 Cromwell Road, Ringsfield, Suffolk, Beccles NR34 8lr,
+                United Kingdom</p>
+              <p><img src="./assets/clock.png" alt="Hours"> Monday - Friday 00-24 (CET), Weekends 9:00 - 17:00 (CET)</p>
             </div>
-
+  
             <div class="footer-section">
               <h3>Useful Links</h3>
               <a href="/about-us.html">About us</a>
@@ -306,7 +292,7 @@
               <a href="#">Pricing</a>
               <a href="#">Unsubscribe</a>
             </div>
-
+  
             <div class="footer-section">
               <h3>Support</h3>
               <a href="#">Privacy Policy</a>
@@ -315,24 +301,24 @@
               <a href="#">Subscription and Cancellation Policy</a>
             </div>
           </div>
-
+  
           <div class="footer-payments">
             <a href="./index.html">
-              <img src="./assets/footer-logo.png" alt="logo" />
+              <img src="./assets/footer-logo.png" alt="logo">
             </a>
             <div class="payment-icons">
-              <img src="./assets/master.png" alt="MasterCard" />
-              <img src="./assets/visa.png" alt="Visa" />
+              <img src="./assets/master.png" alt="MasterCard">
+              <img src="./assets/visa.png" alt="Visa">
             </div>
           </div>
         </div>
+  
       </div>
       <p class="footer-copyright">
-        Copyright &copy; Budgetbscope 2023. Blindscope Limited - CR: 14031689 |
-        All rights reserved.
+        Copyright &copy; Budgetbscope 2023. Blindscope Limited - CR: 14031689 | All rights reserved.
       </p>
+  
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>

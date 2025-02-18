@@ -1,4 +1,3 @@
-// language dropdown
 const dropdownBtn = document.getElementById("selected-lang");
 const dropdownMenu = document.getElementById("dropdown");
 const arrow = document.querySelector(".arrow");
@@ -14,31 +13,56 @@ if (!dropdownBtn || !dropdownMenu || !arrow) {
   document.querySelectorAll(".dropdown-content div").forEach((item) => {
     item.addEventListener("click", function () {
       const selectedFlag = this.dataset.flag;
-      if (!selectedFlag) {
-        console.error("Selected flag data not found.");
+      const selectedLang = this.getAttribute("data-lang");
+
+      if (!selectedFlag || !selectedLang) {
+        console.log("Selected flag or language data not found.");
         return;
       }
-      dropdownBtn.innerHTML = `<img src="${selectedFlag}" alt="">
-        <span class="arrow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.47634 5.01749L0.964577 0.982514L8.03564 0.982513C8.01816 1 4.47634 5.01749 4.47634 5.01749Z" fill="#121212"/>
-            </svg>
-        </span>`;
+
+      const btnImg = dropdownBtn.querySelector("img");
+      const btnText = dropdownBtn.querySelector("span");
+
+      btnImg.src = selectedFlag;
+      btnImg.alt = selectedLang;
+      btnText.textContent = selectedLang.charAt(0).toUpperCase() + selectedLang.slice(1);
+
       dropdownMenu.classList.remove("show");
       arrow.classList.remove("rotate");
     });
   });
 
   document.addEventListener("click", function (event) {
-    if (
-      !dropdownBtn.contains(event.target) &&
-      !dropdownMenu.contains(event.target)
-    ) {
+    if (!dropdownBtn.contains(event.target) && !dropdownMenu.contains(event.target)) {
       dropdownMenu.classList.remove("show");
       arrow.classList.remove("rotate");
     }
   });
 }
+
+
+// toggle menu
+document.addEventListener("DOMContentLoaded", function () {
+  const menu = document.querySelector(".menu");
+  const hamburger = document.querySelector(".hamburger");
+  const menuIcon = document.getElementById("menuIcon");
+
+  const menuOpenIcon = "./assets/menu-icon.png"; // Your menu icon
+  const menuCloseIcon = "./assets/close-icon.png"; // Your close icon
+
+  hamburger.addEventListener("click", function () {
+    menu.classList.toggle("active"); // Toggle menu visibility
+
+    // Fade out current icon, change source, then fade in
+    menuIcon.classList.add("hidden");
+    setTimeout(() => {
+      menuIcon.src = menu.classList.contains("active") ? menuCloseIcon : menuOpenIcon;
+      menuIcon.classList.remove("hidden");
+    }, 200); // Wait for fade-out before changing image
+  });
+});
+
+
 
 
 // section title animation
@@ -85,5 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   elements.forEach(element => observer.observe(element));
 });
+
+
 
 

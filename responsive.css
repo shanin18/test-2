@@ -19,9 +19,23 @@
   .pricing-card-wrapper {
     gap: 32px;
   }
+
+  .about-us-left-bottom button {
+    width: 154px;
+    height: 48px; 
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 1200px) {
+  .about-us-left-bottom button {
+    width: 124px;
+    height: 38px; 
+    font-size: 14px;
+    font-weight: 400;
+  }
+
   .section-title {
     font-size: 54px;
     line-height: 60px;
