@@ -687,8 +687,8 @@ header {
 .text-rotate {
   transform: rotate(-90deg) !important;
   position: absolute;
-  bottom: 195px;
-  left: -195px;
+  bottom: 180px;
+  left: -175px;
 }
 
 .pricing-card-wrapper {
