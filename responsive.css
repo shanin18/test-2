@@ -17,7 +17,6 @@
   .hero-content {
     padding: 32px;
   }
-
 }
 
 @media (max-width: 992px) {
@@ -42,13 +41,16 @@
     font-size: 18px;
     line-height: 28px;
   }
-
 }
 
 @media (max-width: 768px) {
   header {
     gap: 24px;
     padding: 18px 0 24px;
+  }
+
+  .nav-wrapper {
+    padding: 14px 24px;
   }
 
   .section-title {
@@ -67,12 +69,19 @@
     font-size: 16px;
     line-height: 26px;
   }
-
 }
 
 @media (max-width: 576px) {
   .container {
     padding: 0 16px;
+  }
+  .nav-wrapper {
+    padding: 11px 16px;
+    border-radius: 18px;
+  }
+
+  .nav-logo {
+    max-width: 34px;
   }
 
   .hero-content {
@@ -104,5 +113,4 @@
   .section-title span {
     padding-right: 20px;
   }
-
 }
