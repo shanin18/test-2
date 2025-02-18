@@ -74,6 +74,10 @@
   .features-card-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
+  .how-it-works-wrapper {
+    flex-direction: column;
+    row-gap: 42px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -131,11 +135,19 @@
   .feature-right {
     order: 3;
   }
+  .step {
+    gap: 34px;
+  }
 }
 
 @media (max-width: 576px) {
   .container {
     padding: 0 16px;
+  }
+
+  .section-title {
+    font-size: 36px;
+    line-height: 44px;
   }
 
   .nav-wrapper {
@@ -187,6 +199,12 @@
   .feature-icon {
     width: 90.353px;
   }
+
+  .step {
+    gap: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+  } 
 }
 
 @media (max-width: 400px) {

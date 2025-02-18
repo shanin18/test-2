@@ -502,7 +502,7 @@ header {
 .how-it-works-wrapper {
   margin-top: 42px;
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
