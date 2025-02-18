@@ -6,6 +6,15 @@
   .text-container span {
     font-size: 80px;
   }
+
+  .experience h3 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .experience p {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -42,6 +51,15 @@
   .feature-right {
     max-width: 450px;
   }
+
+  .about-us-right {
+    padding: 0 42px;
+  }
+
+  .about-us-left-bottom .experience {
+    bottom: 24px;
+    left: 24px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -74,9 +92,37 @@
   .features-card-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .how-it-works-wrapper {
     flex-direction: column;
     row-gap: 42px;
+  }
+
+  .about-us-left {
+    flex-shrink: 0;
+  }
+
+  .about-us-right {
+    padding: 0px;
+  }
+
+  .about-us-right .text-container {
+    display: none;
+  }
+
+  .about-us-wrapper {
+    flex-direction: column;
+    gap: 42px;
+  }
+
+  .about-us-left-bottom .experience {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .experience h3 {
+    font-size: 48px;
+    line-height: 40px;
   }
 }
 
@@ -124,6 +170,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
   .feature-header-left {
     order: 2;
   }
@@ -135,9 +182,11 @@
   .feature-right {
     order: 3;
   }
+
   .step {
     gap: 34px;
   }
+
 }
 
 @media (max-width: 576px) {
@@ -204,7 +253,7 @@
     gap: 18px;
     flex-direction: column;
     align-items: flex-start;
-  } 
+  }
 }
 
 @media (max-width: 400px) {
