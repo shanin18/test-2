@@ -78,6 +78,18 @@
     padding: 48px 68px;
   }
 
+  .course-wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .course-right {
+    max-width: 100%;
+  }
+
+  .course-section-img {
+    margin-top: 44px;
+  }
 }
 
 @media (max-width: 992px) {
