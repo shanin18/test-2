@@ -39,3 +39,36 @@ if (!dropdownBtn || !dropdownMenu || !arrow) {
     }
   });
 }
+
+
+// section title animation
+document.addEventListener("DOMContentLoaded", function () {
+  const textContainers = document.querySelectorAll(".text-container");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          
+          // Apply transition delays dynamically
+          const words = entry.target.querySelectorAll(".word");
+          words.forEach((word, wordIndex) => {
+            const letters = word.querySelectorAll("span");
+            letters.forEach((letter, letterIndex) => {
+              // Apply a delay based on the character's position
+              letter.style.transitionDelay = `${(wordIndex * 0.4 + letterIndex * 0.2)}s`;
+            });
+          });
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  textContainers.forEach((textContainer) => {
+    observer.observe(textContainer);
+  });
+});
+
+
