@@ -879,6 +879,7 @@ header {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .get-in-touch-left {
@@ -915,7 +916,7 @@ header {
 }
 
 .get-in-touch-right {
-  max-width: 470px;
+  max-width: 688px;
   width: 100%;
   padding: 64px 84px;
   border-radius: 32px;
@@ -1138,14 +1139,14 @@ footer {
   background-image: url("./assets/footer-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 323px;
-  padding-top: 96px;
+  height: 360px;
   border-radius: 32px 32px 0px 0px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  padding: 96px 16px 0;
 }
 
 .footer-top h2 {
@@ -1154,6 +1155,7 @@ footer {
   font-weight: 500;
   line-height: 60px;
   letter-spacing: -0.96px;
+  text-align: center;
 }
 
 .footer-top button {
@@ -1167,7 +1169,7 @@ footer {
 .footer-bottom {
   background-color: var(--dark);
   color: var(--white);
-  padding: 64px 42px 56px;
+  padding: 64px 42px;
   border-radius: 32px;
   overflow: hidden;
   margin-top: -64px;
@@ -1175,7 +1177,7 @@ footer {
 
 .footer-details {
   display: grid;
-  grid-template-columns: 452px 372px 372px;
+  grid-template-columns: 452px 1fr 1fr;
   gap: 32px;
 }
 
@@ -1238,8 +1240,9 @@ footer {
   text-align: center;
   border-radius: 43px 43px 0 0;
   background-color: var(--white);
-  margin-top: -25px;
-  padding: 18px 0;
+  margin-top: -35px;
+  padding: 18px 16px;
+  width: 80%;
 }
 
 /* footer ends */
