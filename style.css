@@ -322,6 +322,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  overflow: hidden;
 }
 
 .section-title span {
@@ -432,6 +433,15 @@ header {
   gap: 64px;
   align-items: flex-start;
   justify-content: space-between;
+  transition: transform 0.4s ease-out, box-shadow 0.4s ease-out, background-color 0.4s ease-out;
+  will-change: transform, opacity;
+}
+
+.features-card:hover {
+  transform: translateY(-15px) !important;
+  background-color: var(--primary);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  color: var(--white);
 }
 
 .features-card h3 {
@@ -454,6 +464,10 @@ header {
   line-height: 28px;
 }
 
+.features-card:hover .feature-card-description p {
+  color: var(--white);
+}
+
 .feature-icon {
   max-width: 90.353px;
   height: auto;
@@ -464,6 +478,10 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.features-card:hover .feature-icon img {
+  stroke: var(--white);
 }
 
 /* features section ends*/
@@ -691,6 +709,23 @@ header {
   justify-content: space-between;
   position: relative;
   gap: 32px;
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.pricing-card.aos {
+  transition: opacity 0.6s ease-out,
+    transform 0.6s ease-out,
+    background-color 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+/* Hover effect */
+.pricing-card:hover {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
 }
 
 .pricing-card-left {
@@ -723,6 +758,7 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
+  color: var(--dark) !important;
 }
 
 .pricing-icon {
@@ -744,6 +780,10 @@ header {
   font-weight: 500;
   line-height: 44px;
   letter-spacing: -0.72px;
+}
+
+.pricing-card:hover .price {
+  color: var(--white);
 }
 
 .pricing-card-right .features {
@@ -774,6 +814,20 @@ header {
   background-color: var(--primary);
   display: inline-block;
   border-radius: 50%;
+  transition-duration: 0.4s;
+}
+
+.pricing-card:hover .pricing-card-right .features li::before {
+  background-color: var(--white);
+}
+
+.pricing-card-right .features li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  display: inline-block;
+  border-radius: 50%;
 }
 
 .pricing-content {
@@ -789,6 +843,7 @@ header {
   font-weight: 500;
   line-height: 44px;
   letter-spacing: -0.72px;
+  transition: color 0.4s ease;
 }
 
 .pricing-content .duration {
@@ -1153,6 +1208,12 @@ footer {
   display: block;
   width: fit-content;
   margin-bottom: 18px;
+  transition: 0.4s ease;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  color: var(--primary);
 }
 
 .footer-payments {
@@ -1203,14 +1264,77 @@ footer {
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.text-container.visible {
+.text-container.is-visible {
   opacity: 1;
   transform: translateX(0);
 }
 
-.text-container.visible span {
+.text-container.is-visible span {
   opacity: 1;
   transform: translateX(0);
 }
+
+/* aos */
+.aos {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Visible state when element enters the viewport */
+.aos.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide from left */
+.aos.left {
+  transform: translateX(-50px);
+}
+
+.aos.left.visible {
+  transform: translateX(0);
+}
+
+/* Slide from right */
+.aos.right {
+  transform: translateX(50px);
+}
+
+.aos.zoom-in {
+  transform: scale(0.6);
+}
+
+.aos.zoom-in.visible {
+  transform: scale(1);
+}
+
+/* Zoom-out effect */
+.aos.zoom-out {
+  transform: scale(1.2);
+}
+
+.aos.zoom-out.visible {
+  transform: scale(1);
+}
+
+.aos.right.visible {
+  transform: translateX(0);
+}
+
+/* Delayed animations */
+.aos.delay-1 {
+  transition-delay: 0.2s;
+}
+
+.aos.delay-2 {
+  transition-delay: 0.3s;
+}
+
+.aos.delay-3 {
+  transition-delay: 0.4s;
+}
+
+/* aos */
 
 /* animations */

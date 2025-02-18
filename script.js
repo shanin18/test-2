@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
+          entry.target.classList.add("is-visible");
           
           // Apply transition delays dynamically
           const words = entry.target.querySelectorAll(".word");
@@ -69,6 +69,21 @@ document.addEventListener("DOMContentLoaded", function () {
   textContainers.forEach((textContainer) => {
     observer.observe(textContainer);
   });
+});
+
+// aos animations
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".aos");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elements.forEach(element => observer.observe(element));
 });
 
 
