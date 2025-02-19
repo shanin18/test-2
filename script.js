@@ -47,22 +47,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector(".hamburger");
   const menuIcon = document.getElementById("menuIcon");
 
-  const menuOpenIcon = "./assets/menu-icon.png"; // Your menu icon
-  const menuCloseIcon = "./assets/close-icon.png"; // Your close icon
-
+  const menuOpenIcon = "./assets/menu-icon.png";
+  const menuCloseIcon = "./assets/close-icon.png";
   hamburger.addEventListener("click", function () {
-    menu.classList.toggle("active"); // Toggle menu visibility
+    menu.classList.toggle("active");
 
-    // Fade out current icon, change source, then fade in
     menuIcon.classList.add("hidden");
     setTimeout(() => {
       menuIcon.src = menu.classList.contains("active") ? menuCloseIcon : menuOpenIcon;
       menuIcon.classList.remove("hidden");
-    }, 200); // Wait for fade-out before changing image
+    }, 200);
   });
 });
-
-
 
 
 // section title animation
@@ -75,12 +71,10 @@ document.addEventListener("DOMContentLoaded", function () {
         if (entry.isIntersecting) {
           entry.target.classList.add("is-visible");
           
-          // Apply transition delays dynamically
           const words = entry.target.querySelectorAll(".word");
           words.forEach((word, wordIndex) => {
             const letters = word.querySelectorAll("span");
             letters.forEach((letter, letterIndex) => {
-              // Apply a delay based on the character's position
               letter.style.transitionDelay = `${(wordIndex * 0.4 + letterIndex * 0.2)}s`;
             });
           });
