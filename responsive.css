@@ -22,7 +22,7 @@
 
   .about-us-left-bottom button {
     width: 154px;
-    height: 48px; 
+    height: 48px;
     font-size: 16px;
     font-weight: 400;
   }
@@ -31,7 +31,7 @@
 @media (max-width: 1200px) {
   .about-us-left-bottom button {
     width: 124px;
-    height: 38px; 
+    height: 38px;
     font-size: 14px;
     font-weight: 400;
   }
@@ -194,7 +194,7 @@
   .about-us-hero h1 {
     font-size: 48px;
     line-height: 60px;
-}
+  }
 
 }
 
@@ -297,22 +297,36 @@
   .about-us-hero h1 {
     font-size: 36px;
     line-height: 60px;
-}
+  }
 
-.text-container span {
-  line-height: 75px;
-}
-.text-container { 
-  gap: 30px;
-  flex-wrap: wrap;
-}
+  .text-container span {
+    line-height: 75px;
+  }
 
-.word {
-  gap: 12px;
-}
+  .text-container {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .word {
+    gap: 12px;
+  }
 }
 
 @media (max-width: 576px) {
+  .hamburger img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .menu {
+    border-radius: 18px;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+
   .container {
     padding: 0 16px;
   }

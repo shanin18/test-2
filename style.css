@@ -363,23 +363,12 @@ header {
   background-color: var(--white);
 }
 
-/* Style for the hamburger button */
 .hamburger {
   background: none;
   border: none;
   cursor: pointer;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-/* Hide close icon initially */
-/* .hamburger img.close-icon {
-  display: none;
-} */
-/* Smooth transition for icon */
 .hamburger img {
   width: 24px;
   height: 24px;
