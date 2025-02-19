@@ -388,7 +388,6 @@ header {
   letter-spacing: -1.2px;
   padding: 8px 16px;
   border-radius: 50px;
-  transition-duration: 0.4s;
 }
 
 .menu a:hover {
